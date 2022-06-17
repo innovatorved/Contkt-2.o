@@ -4,7 +4,7 @@ import { StateManager } from "../context/data";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function createaccount() {
+export default function Createaccount() {
   const { host } = useContext(StateManager);
   const [data, setData] = useState({
     firstname: "",

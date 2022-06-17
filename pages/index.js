@@ -28,7 +28,7 @@ export default function Home() {
     });
     setData([]);
     Router.push('/login');
-  },[1])
+  })
 
   return (
     <div>

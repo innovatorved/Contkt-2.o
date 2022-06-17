@@ -37,7 +37,7 @@ function Home() {
 
   useEffect(() => {
     socketInitializer();
-  },[1]);
+  });
 
   const SendChat = (data) => {
     socket.emit("chat", {
