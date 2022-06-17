@@ -42,7 +42,7 @@ export default function createaccount() {
     e.preventDefault();
     const user = {
       name: data.firstname + " " + data.lastname,
-      username: data.username,
+      username: data.username.toLowerCase(),
       email: data.email,
       password: pass.password,
     };
@@ -57,6 +57,9 @@ export default function createaccount() {
       .then((newUser) => {
         if (newUser.success) {
           localStorage.setItem("token", newUser.authtoken);
+          localStorage.setItem("username", res.userDetails.username);
+          localStorage.setItem("name", res.userDetails.name);
+          localStorage.setItem("recipent", "");
           Router.push("/login");
         } else {
           alert(newUser.error);
@@ -65,7 +68,7 @@ export default function createaccount() {
   };
 
   const runthis = async () => {
-    const username = data.username;
+    const username = data.username.toLowerCase();
     const url = `${host}/api/auth/check/${username}`;
 
     if (username.length >= 5) {
@@ -90,7 +93,7 @@ export default function createaccount() {
         <title>Create Acoount on Contkt-2.o</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="pt-16">
+      <div className="md:pt-8">
         <div className="flex items-center justify-center">
           <div className="xl:w-10/12 w-full px-8">
             <div className="xl:px-24">

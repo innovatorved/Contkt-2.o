@@ -6,7 +6,7 @@ import Link from "next/link";
 
 
 export default function Login() {
-  const { host } = useContext(StateManager);
+  const { host , setUserInfo} = useContext(StateManager);
   useEffect(() => {
     if (localStorage.getItem("token")) {
       Router.push("/");
@@ -37,6 +37,14 @@ export default function Login() {
       .then((res) => {
         if (res.success) {
           localStorage.setItem("token", res.authtoken);
+          localStorage.setItem("username", res.userDetails.username);
+          localStorage.setItem("name", res.userDetails.name);
+          localStorage.setItem("recipent", '');
+          setUserInfo({
+            name: res.userDetails.name,
+            username: res.userDetails.username,
+          })
+
           Router.push("/");
         } else {
           alert(res.error);
@@ -50,7 +58,7 @@ export default function Login() {
         <title>Login to Contkt-2.o</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="pt-16">
+      <div className="">
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md w-full space-y-8">
             <div>

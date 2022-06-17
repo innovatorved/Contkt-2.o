@@ -10,6 +10,12 @@ const States = (props) => {
     name: "",
     username: "",
   });
+  const [recipent, setrecipentName] = useState("");
+  const setRecipent = () => {
+    const recipentName = prompt("Enter recipent name");
+    setrecipentName(recipentName);
+    localStorage.setItem("recipent", recipentName);
+  };
 
   const list = [];
 
@@ -35,6 +41,9 @@ const States = (props) => {
         LogOut,
         userInfo,
         setUserInfo,
+        recipent,
+        setRecipent,
+        setrecipentName
       }}
     >
       {props.children}

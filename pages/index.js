@@ -3,11 +3,20 @@ import { useContext , useEffect } from 'react';
 import Router from 'next/router';
 import { StateManager } from '../context/data';
 
+import Chat from '../components/Chat';
 export default function Home() {
 
-  const { setUserInfo, LogOut, host, data, setData } = useContext(StateManager);
+  const { setUserInfo, LogOut, host, data, setData , setrecipentName} = useContext(StateManager);
+  
 
   useEffect(() => {
+    setUserInfo(
+      {
+        name: localStorage.getItem("name"),
+        username: localStorage.getItem("username"),
+      }
+    )
+    setrecipentName(localStorage.getItem("recipent"));
     if (localStorage.getItem('token')) return;
 
     localStorage.getItem('token')
@@ -30,7 +39,7 @@ export default function Home() {
       </Head>
 
       <main>
-        
+        <Chat />
       </main>
     </div>
   )
