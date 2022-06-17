@@ -4,7 +4,6 @@ const mongoURI = process.env.MONGODB_URI;
 const connection = {};
 
 const connectToMongo = async() => {
-    console.log(mongoURI)
     if (connection.isConnected){
         return ;
     }
