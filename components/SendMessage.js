@@ -31,7 +31,8 @@ export default function SendMessage(props) {
       data,
       recipent,
     }
-    setMessages((messages) => [...messages, msg]);
+    const newMessages = (messages) => [...messages, msg]
+    setMessages(newMessages);
     SendChat(data);
   };
 

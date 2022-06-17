@@ -57,8 +57,8 @@ export default function createaccount() {
       .then((newUser) => {
         if (newUser.success) {
           localStorage.setItem("token", newUser.authtoken);
-          localStorage.setItem("username", res.userDetails.username);
-          localStorage.setItem("name", res.userDetails.name);
+          localStorage.setItem("username", newUser.data.user.username);
+          localStorage.setItem("name", newUser.data.user.name);
           localStorage.setItem("recipent", "");
           Router.push("/login");
         } else {

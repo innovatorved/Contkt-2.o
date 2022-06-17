@@ -44,7 +44,7 @@ export default async function handler(req, res) {
 
         const authtoken = jwt.sign(data, JWT_key);
         success = true;
-        return res.status(200).json({ success, authtoken });
+        return res.status(200).json({ success, authtoken , data});
     } catch (error) {
         success = false;
         return res.status(500).json({success , error :"Internal Server try after some time"});
