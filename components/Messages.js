@@ -40,7 +40,6 @@ export default function Messages(props) {
               .map((item) => item)
               .reverse()
               .map((msg, key) => {
-                console.log(msg)
                 return( 
                   msg.recipent !== userName 
                   ? 
