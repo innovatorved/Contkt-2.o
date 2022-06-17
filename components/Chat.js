@@ -93,7 +93,7 @@ function Home() {
               userName={userName}
               isMobile={isMobile}
             />
-            <SendMessage SendChat={SendChat} msg={msg} setMsg={setMsg} />
+            <SendMessage SendChat={SendChat} msg={msg} setMsg={setMsg} setMessages={setMessages}/>
           </>
         ) : (
           <>
