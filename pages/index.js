@@ -1,25 +1,22 @@
-import Head from 'next/head';
-import { useContext , useEffect } from 'react';
-import Router from 'next/router';
-import { StateManager } from '../context/data';
+import Head from "next/head";
+import { useContext, useEffect } from "react";
+import Router from "next/router";
+import { StateManager } from "../context/data";
 
-import Chat from '../components/Chat';
+import Chat from "../components/Chat";
 export default function Home() {
-
-  const { setUserInfo, LogOut, host, data, setData , setrecipentName} = useContext(StateManager);
-  
+  const { setUserInfo, LogOut, host, data, setData, setrecipentName } =
+    useContext(StateManager);
 
   useEffect(() => {
-    setUserInfo(
-      {
-        name: localStorage.getItem("name"),
-        username: localStorage.getItem("username"),
-      }
-    )
+    setUserInfo({
+      name: localStorage.getItem("name"),
+      username: localStorage.getItem("username"),
+    });
     setrecipentName(localStorage.getItem("recipent"));
-    if (localStorage.getItem('token')) return;
+    if (localStorage.getItem("token")) return;
 
-    localStorage.getItem('token')
+    localStorage.getItem("token");
     localStorage.removeItem("name");
     localStorage.removeItem("username");
     setUserInfo({
@@ -27,8 +24,10 @@ export default function Home() {
       username: "",
     });
     setData([]);
-    Router.push('/login');
-  })
+    Router.push("/login");
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [1]);
 
   return (
     <div>
@@ -42,5 +41,5 @@ export default function Home() {
         <Chat />
       </main>
     </div>
-  )
+  );
 }

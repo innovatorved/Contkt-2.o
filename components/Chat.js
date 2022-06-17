@@ -37,7 +37,9 @@ function Home() {
 
   useEffect(() => {
     socketInitializer();
-  });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[1]);
 
   const SendChat = (data) => {
     socket.emit("chat", {
