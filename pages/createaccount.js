@@ -62,7 +62,7 @@ export default function Createaccount() {
           localStorage.setItem("username", newUser.data.user.username);
           localStorage.setItem("name", newUser.data.user.name);
           localStorage.setItem("recipent", "");
-          Router.push("/login");
+          Router.push("/");
         } else {
           alert(newUser.error);
           setProcess(false);

@@ -45,7 +45,6 @@ export default function Login() {
             name: res.userDetails.name,
             username: res.userDetails.username,
           });
-
           Router.push("/");
         } else {
           alert(res.error);

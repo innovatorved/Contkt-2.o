@@ -9,13 +9,28 @@ export default function Home() {
     useContext(StateManager);
 
   useEffect(() => {
+    fetch(`${host}/api/getUserInfo`, {
+      headers: {
+        authtoken: localStorage.getItem("token"),
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.success === false) {
+          localStorage.removeItem("token");
+          Router.push("/login");
+        } 
+      }
+      ).catch((err) => {
+        console.log(err);
+      }
+      );
     setUserInfo({
       name: localStorage.getItem("name"),
       username: localStorage.getItem("username"),
     });
     setrecipentName(localStorage.getItem("recipent"));
     if (localStorage.getItem("token")) return;
-
     localStorage.getItem("token");
     localStorage.removeItem("name");
     localStorage.removeItem("username");
@@ -39,7 +54,7 @@ export default function Home() {
 
         <div className="flex justify-end">
         <img
-          className="mt-2 cursor-pointer mr-6 fixed"
+          className="mt-2 cursor-pointer mr-16 fixed"
           src="/logout.png"
           alt="Logout Button"
           title={"Logout Button"}
