@@ -94,8 +94,8 @@ export default function Createaccount() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="md:pt-8">
-        <div className="flex items-center justify-center">
-          <div className="xl:w-10/12 w-full px-8">
+        <div className="flex items-center justify-center py-12 px-4 lg:px-8">
+          <div className="xl:w-10/12 w-full px-4">
             <div className="xl:px-24">
               <div>
                 <img
@@ -103,7 +103,7 @@ export default function Createaccount() {
                   src="./contkt-logo-low-quality.png"
                   alt="Workflow"
                 />
-                <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                <h2 className="mt-6 text-center text-xl md:text-2xl font-extrabold text-gray-900">
                   Create Account in{" "}
                   <span className="text-[#F97316]">Contkt-2.o</span>
                 </h2>
@@ -114,7 +114,7 @@ export default function Createaccount() {
                   </span>
                 </p>
               </div>
-              <div className="px-5 py-4 bg-gray-100 rounded-lg flex items-center justify-between mt-7">
+              <div className="px-5 py-4 bg-gray-100 rounded-lg flex items-center justify-between mt-8">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <svg
@@ -131,7 +131,7 @@ export default function Createaccount() {
                     </svg>
                   </div>
 
-                  <p className="text-sm text-gray-800 pl-3">
+                  <p className="text-xs text-gray-800 pl-3">
                     We take privacy issues seriously. You can be sure that your
                     personal data is securely protected.
                   </p>

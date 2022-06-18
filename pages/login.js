@@ -60,14 +60,14 @@ export default function Login() {
       </Head>
       <div className="">
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-md w-full space-y-8">
+          <div className="max-w-md w-full space-y-8 px-4 lg:px-8">
             <div>
               <img
                 className="mx-auto h-32 w-auto"
                 src="./contkt-logo-low-quality.png"
                 alt="Workflow"
               />
-              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+              <h2 className="mt-6 text-center text-xl md:text-2xl font-extrabold text-gray-900">
                 Sign in to your <span className="text-[#F97316]">Contkt-2.o</span>
               </h2>
               <p className="mt-6 text-center text-xl font-bold text-gray-900">
@@ -95,7 +95,7 @@ export default function Login() {
                   </svg>
                 </div>
 
-                <p className="text-sm text-gray-800 pl-3">
+                <p className="text-xs text-gray-800 pl-3">
                   We take privacy issues seriously. You can be sure that your
                   personal data is securely protected.
                 </p>
