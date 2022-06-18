@@ -16,6 +16,9 @@ const States = (props) => {
     setrecipentName(recipentName);
     localStorage.setItem("recipent", recipentName);
   };
+  const ChangeRecipentName=(name)=>{
+    setrecipentName(name);
+  }
 
   const list = [];
 
@@ -43,7 +46,8 @@ const States = (props) => {
         setUserInfo,
         recipent,
         setRecipent,
-        setrecipentName
+        setrecipentName,
+        ChangeRecipentName
       }}
     >
       {props.children}

@@ -78,7 +78,7 @@ function Home() {
       </Head>
 
       <img
-        className="h-auto mx-auto mt-24"
+        className="h-auto mx-auto mt-20 md:mt-24"
         src="/contkt-logo-extra-low-quality.png"
         alt="Contkt Logo"
         width={200}

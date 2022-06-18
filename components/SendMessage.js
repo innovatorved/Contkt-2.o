@@ -60,7 +60,7 @@ export default function SendMessage(props) {
             className="text-xs ml-2 cursor-pointer text-orange-500 font-medium hover:text-orange-600"
             onClick={() => {setRecipent()}}
           >
-            Change username
+            Enter username
           </div>
         </div>
         <div>

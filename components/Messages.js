@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import {StateManager} from '../context/data';
 
 export default function Messages(props) {
   const { messages, userName, isMobile } = props;
+  const {ChangeRecipentName} = useContext(StateManager);
+
+
   return (
     <div className="sm:max-w-[350px] md:max-w-[450px] max-w-[300px] m-auto mt-10">
       <div className="mt-[15px] mb-[10px] ">
@@ -23,8 +27,11 @@ export default function Messages(props) {
                 </div>
               ) : (
                 <div
-                  className="text-left rounded-lg mt-[10px] mb-[10px] p-[10px] pt-2 bg-[#EFEFEF]"
+                  className="text-left rounded-lg mt-[10px] mb-[10px] p-[10px] pt-2 bg-[#EFEFEF] md:cursor-pointer active:border-black border-[1px]"
                   key={key}
+                  onClick={()=>{
+                    ChangeRecipentName(msg.data.username)
+                  }}
                 >
                   <p className="text-right text-[50%] text-[#F97316] font-medium">
                     {msg.data.username + "   @" + msg.data.username}
@@ -60,8 +67,11 @@ export default function Messages(props) {
                   </div>
                 ) : (
                   <div
-                    className="text-left rounded-lg mt-[10px] mb-[10px] p-[10px] pt-2 bg-[#EFEFEF]"
+                    className="text-left rounded-lg mt-[10px] mb-[10px] p-[10px] pt-2 bg-[#EFEFEF] md:cursor-pointer active:border-black border-[1px]"
                     key={key}
+                    onClick={()=>{
+                      ChangeRecipentName(msg.data.username)
+                    }}
                   >
                     <p className="text-right text-[50%] text-[#F97316] font-medium">
                       {msg.data.username + "   @" + msg.data.username}
