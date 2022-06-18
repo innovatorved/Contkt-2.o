@@ -37,6 +37,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+        <div className="flex justify-end">
+        <img
+          className="mt-2 cursor-pointer mr-6"
+          src="/logout.png"
+          alt="Logout Button"
+          title={"Logout Button"}
+          width={24}
+          height={24}
+          onClick={()=>{
+            Router.push("/login");
+            LogOut();
+          }}
+        />
+        </div>
+
       <main>
         <Chat />
       </main>

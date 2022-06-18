@@ -26,6 +26,7 @@ const States = (props) => {
 
   const LogOut = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("recipent");
     localStorage.removeItem("name");
     localStorage.removeItem("username");
     setUserInfo({
