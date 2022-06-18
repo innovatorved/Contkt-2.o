@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className="flex justify-end">
         <img
-          className="mt-2 cursor-pointer mr-6"
+          className="mt-2 cursor-pointer mr-6 fixed"
           src="/logout.png"
           alt="Logout Button"
           title={"Logout Button"}
