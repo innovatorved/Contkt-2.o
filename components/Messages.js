@@ -57,7 +57,7 @@ export default function Messages(props) {
                     key={key}
                   >
       
-                    <p className="text-left text-[70%] text-[#F97316] font-medium">
+                    <p className="text-left text-[60%] text-[#F97316] font-medium">
                       {msg.data.username + "   @" + msg.data.username}
                     </p>
                     <p>{msg.data.message}</p>
@@ -73,7 +73,7 @@ export default function Messages(props) {
                       ChangeRecipentName(msg.data.username)
                     }}
                   >
-                    <p className="text-right text-[70%] text-[#F97316] font-medium">
+                    <p className="text-right text-[60%] text-[#F97316] font-medium">
                       {msg.data.username + "   @" + msg.data.username}
                     </p>
                     <p>{msg.data.message}</p>
