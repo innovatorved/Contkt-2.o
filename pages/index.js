@@ -48,8 +48,8 @@ export default function Home() {
     <div>
       <Head>
         <title>Contkt-2.o</title>
-        <meta name="description" content="Chat with your friends" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Contkt App : Web Based Messaging App"/>
+        <link rel="icon" href="/logonew.png" />
       </Head>
 
         <div className="flex justify-end">
