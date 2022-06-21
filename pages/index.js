@@ -49,7 +49,7 @@ export default function Home() {
       <Head>
         <title>Contkt-2.o</title>
         <meta name="description" content="Contkt App : Web Based Messaging App"/>
-        <link rel="icon" href="/logonew.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
         <div className="flex justify-end">
