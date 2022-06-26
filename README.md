@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/innovatorved/Contkt-2.o/blob/main/public/logo.png?raw=true" alt="Contkt Logo" height=200 width=200/>
+  <img src="https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/logo.png" alt="Contkt Logo" height=200 width=200/>
 </p>
 
 # Contkt  - ![Logo](https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/favicon-32x32.png)
@@ -10,8 +10,9 @@ Real time Communication between 2peers using Web Socket. Communication between t
 
 ## Demo
 
-https://bit.ly/3ngLHs3
+[https://bit.ly/contkt2](https://bit.ly/contkt2)
 
+ <img src="https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/contktGif.gif" alt="Contkt Logo" height=200 width=200/>
 
 ## Environment Variables
 
