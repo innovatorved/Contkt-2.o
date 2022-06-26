@@ -12,7 +12,7 @@ Real time Communication between 2peers using Web Socket. Communication between t
 
 [https://bit.ly/contkt2](https://bit.ly/contkt2)
 
- <img src="https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/contktGif.gif" alt="Contkt Logo" height=200 width=200/>
+ <img src="https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/contktGif.gif" alt="Contkt Logo" height=300/>
 
 ## Environment Variables
 
