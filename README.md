@@ -1,18 +1,18 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/logo.png" alt="Contkt Logo" height=200 width=200/>
+  <img src="https://bbpuefvzkslxkhvduevs.supabase.co/storage/v1/object/public/images/contkt-logo.png" alt="Contkt Logo" height=200 width=200/>
 </p>
 
-# Contkt  - ![Logo](https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/favicon-32x32.png)
+# Contkt  - ![Logo](https://bbpuefvzkslxkhvduevs.supabase.co/storage/v1/object/public/images/contkt-favicon-32.png)
 
 Real time Communication between 2peers using Web Socket. Communication between two client using their username. Only when both peers are connected through website. Website doesn't save the message state and History
 
 
 ## Demo
 
-[https://bit.ly/contkt2](https://bit.ly/contkt2)
+[Contkt2](https://contkt2.onrender.com/login)
 
- <img src="https://raw.githubusercontent.com/innovatorved/Contkt-2.o/main/public/contktGif.gif" alt="Contkt Logo" height=300/>
+ <img src="https://bbpuefvzkslxkhvduevs.supabase.co/storage/v1/object/public/images/contktGif.gif" alt="Contkt Logo" height=300/>
 
 ## Environment Variables
 
