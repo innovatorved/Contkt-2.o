@@ -7,6 +7,9 @@
 
 Real time Communication between 2peers using Web Socket. Communication between two client using their username. Only when both peers are connected through website. Website doesn't save the message state and History
 
+- Two clients can communicate with each other in real time using Web Sockets on a website, identified by their username. 
+- The website does not save the messages or conversation history.
+
 
 ## Demo
 
